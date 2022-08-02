@@ -4,11 +4,49 @@
  */
 
 // Vanilla JavaScript Function
+// function addTwoNumbers(a, b) {
+//     //Code block
+//     return a + b;
+// }
+
+// let sum = addTwoNumbers(3, 5)
+
+// console.log(sum)
+
+
 
 // Arrow Function With Parameters
 
+const addTwoNumbers = (a, b) => {
+    //Code block
+    return a + b;
+}
+
+let sum = addTwoNumbers(3, 5)
+
+console.log(sum)
+
 // Single Line Arrow Function With Parameters
+// const addTwoNumbers2 = (a, b) => (a + b); also valid
+
+const addTwoNumbers2 = (a, b) => a + b;
+let sum2 = addTwoNumbers2(6,4)
+console.log(sum2)
 
 // Implicit Returns
 
+const saySomething = message => console.log(message) //no parentheses needed for single parameter
+saySomething("Hello World!")
+
+const sayHello = () => console.log("Hello!") //when using no parameters, a pair of parentheses are still needed.
+sayHello()
+
 // Returning Multiple Lines
+
+const returnMultipleLines = () => (
+    // Parentheses are required for the return function.
+    `<p>
+        This is a multiline string!
+    </p>`
+)
+console.log(returnMultipleLines())
